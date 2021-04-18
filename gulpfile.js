@@ -17,7 +17,7 @@ function startwatch() {
   browserSync.init({
     server: {
       baseDir: './app',
-      index: 'home.html'
+      index: 'index.html'
     },
     files: ["app/src/**/*.*"],
     notify: false,
