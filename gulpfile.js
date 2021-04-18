@@ -17,11 +17,12 @@ function startwatch() {
   browserSync.init({
     server: {
       baseDir: './app',
-      index: 'index.html'
+      directory: true
     },
     files: ["app/src/**/*.*"],
     notify: false,
     online: true,
+    reloadOnRestart: true,
     port: 8080,
     tunnel: "local-dev"
   })
