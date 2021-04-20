@@ -1,1 +1,37 @@
 /*-- Медиа запросы */
+/*---- Контакты */
+@media screen and (max-width: 770px) {
+    iframe{
+        height: 380px;
+    }
+    
+}
+
+@media screen and (max-width: 580px){
+
+    .contact-container-text {
+      @include Headlines_Roboto_Medium_16px;
+    }
+
+    .LastPageLink {
+        @include Links_Roboto_Regular_12px_Default;
+        color: #155724;
+    
+            &:hover {
+                @include Links_Roboto_Regular_12px_Default;
+            }
+    }
+    
+    .ActivePageLink {
+        @include Links_Roboto_Regular_12px_Default;
+        color: #949494;
+    }
+
+    .pages-contact-info-text {
+        @include Links_Roboto_Regular_12px_Default;
+    }
+
+    iframe{
+        height: 480px;
+    }
+}

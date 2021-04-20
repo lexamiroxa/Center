@@ -2952,6 +2952,7 @@ button {
 
 /*-- Базовые элементы */
 body {
+  font-family: "Roboto", sans-serif;
   overflow-x: hidden; }
 
 h1 {
@@ -2984,181 +2985,31 @@ li {
     padding-top: 0px; }
 
 /*-- Основные стили */
-/*---- Хедер */
-.Header {
-  background-color: #fff;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 1px 10px rgba(0, 0, 0, 0.2); }
-  .Header hr {
-    border-bottom-width: 0px;
-    border-top-width: 2px;
-    border-color: #2E7F3C;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    border-style: solid; }
-
-/*------ Название и логотип */
-.HeaderLogo {
-  padding-top: 52px;
-  padding-bottom: 52px;
-  width: fit-content;
-  height: fit-content;
-  margin: 0 auto;
-  justify-content: center;
-  transform-origin: center;
-  transition-duration: 0.1s;
-  transition-property: transform;
-  transition-timing-function: ease-in-out;
-  transform: scale(1);
-  justify-content: space-between; }
-  .HeaderLogo:active {
-    transform: scale(0.99); }
-  .HeaderLogo a {
-    display: flex; }
-
-.svg-Logo {
-  width: 80px;
-  height: 80px;
-  margin: auto 0; }
-
-.HeaderTitle {
-  width: 749px;
-  margin-left: 40px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 22px;
-  line-height: 30px;
-  position: relative; }
-  .HeaderTitle::after {
-    position: absolute;
-    content: '';
-    display: block;
-    border-right: 2px solid #2E7F3C;
-    border-left-width: 0;
-    height: 100%;
-    left: -29px;
-    top: 0; }
-
-/*------ Навигация */
-.Navigation {
-  justify-content: center; }
-
-/*-------- Ссылки */
-.NavLinks {
-  padding-inline-start: 0px;
-  width: 983px;
-  justify-content: space-between;
-  display: flex;
-  padding-top: 15px;
-  margin-bottom: 0; }
-  .NavLinks li {
-    padding-top: 0px;
-    padding-bottom: 15px;
-    list-style: none;
-    font-size: 16px;
-    line-height: 19px;
-    text-transform: uppercase; }
-    .NavLinks li a {
-      transition-duration: 0.2s;
-      transition-property: color;
-      transition-timing-function: ease-in-out; }
-      .NavLinks li a:hover {
-        color: #2E7F3C; }
-
-.ActivePage {
-  box-shadow: inset 0 -3px 0 #2E7F3C; }
-
-/*-------- Кнопка-Бургер */
-.NavBurger {
-  display: none;
-  float: right;
-  width: fit-content;
-  height: fit-content;
-  padding-top: 11px;
-  padding-bottom: 11px;
-  padding-left: 8px;
-  padding-right: 8px;
-  margin-right: 9px; }
-
-.BurgerBox {
-  position: relative;
-  display: block;
-  width: 20px;
-  height: 14px; }
-
-.BurgerInner {
-  position: absolute;
-  width: 20px;
-  height: 2px;
-  left: 0;
-  transition-timing-function: ease;
-  transition-duration: .15s;
-  transition-property: transform;
-  border-radius: 4px;
-  background-color: #000; }
-  .BurgerInner::before {
-    display: block;
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 2px;
-    top: 6px;
-    border-radius: 4px;
-    background-color: #000; }
-  .BurgerInner::after {
-    display: block;
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 2px;
-    top: 12px;
-    border-radius: 4px;
-    background-color: #000; }
-
-.HeadLines {
-  padding: 0px; }
-
-.HeadLines_text {
-  position: static;
-  height: 55px;
-  left: 0px;
-  right: 0px;
-  bottom: 13px;
-  font-family: 'Roboto Slab', sans-serif;
-  font-weight: 300;
-  font-size: 42px;
-  line-height: 55px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 13px 0px; }
-
-.LastPageLink {
-  font-size: 16px;
-  line-height: 19px;
+.Last-Page-Link {
   color: #155724; }
-  .LastPageLink:hover {
-    font-size: 16px;
-    line-height: 19px; }
+  .Last-Page-Link:hover {
+    text-decoration-line: underline; }
 
 .Separator {
-  color: #E60203; }
+  color: #E60203;
+  padding-left: 2px;
+  padding-right: 2px; }
 
-.ActivePageLink {
-  font-size: 16px;
-  line-height: 19px;
+.First-Active-Page {
   color: #949494; }
 
-.border {
-  box-shadow: inset 0 -3px 0 #2E7F3C;
-  width: fit-content; }
+.Headline-Border {
+  width: fit-content;
+  padding-bottom: 24px; }
+  .Headline-Border::after {
+    margin-top: 13px;
+    content: "";
+    width: 100%;
+    height: 3px;
+    display: block;
+    background-color: #2E7F3C; }
 
-.pages_contact {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px; }
-
-.contact-container-text {
+.Center-Name {
   font-weight: 500;
   font-size: 24px;
   line-height: 33px; }
@@ -3176,32 +3027,6 @@ iframe {
 .pages-contact-info-br {
   margin-top: 30px;
   margin-bottom: 30px; }
-
-@media screen and (max-width: 770px) {
-  iframe {
-    height: 380px; } }
-
-@media screen and (max-width: 580px) {
-  .contact-container-text {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px; }
-  .LastPageLink {
-    font-size: 12px;
-    line-height: 16px;
-    color: #155724; }
-    .LastPageLink:hover {
-      font-size: 12px;
-      line-height: 16px; }
-  .ActivePageLink {
-    font-size: 12px;
-    line-height: 16px;
-    color: #949494; }
-  .pages-contact-info-text {
-    font-size: 12px;
-    line-height: 16px; }
-  iframe {
-    height: 480px; } }
 
 .page-partner-img {
   width: 200px;
@@ -3245,5 +3070,39 @@ iframe {
   text-align: center; }
 
 /*-- Локальные Модули */
+.Breadcrumbs {
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 16px; }
+
+.Contacts {
+  padding-top: 16px; }
+
 /*-- Глобальные модули */
 /*-- Медиа запросы */
+/*---- Контакты */
+@media screen and (max-width: 770px) {
+  iframe {
+    height: 380px; } }
+
+@media screen and (max-width: 580px) {
+  .contact-container-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px; }
+  .LastPageLink {
+    font-size: 12px;
+    line-height: 16px;
+    color: #155724; }
+    .LastPageLink:hover {
+      font-size: 12px;
+      line-height: 16px; }
+  .ActivePageLink {
+    font-size: 12px;
+    line-height: 16px;
+    color: #949494; }
+  .pages-contact-info-text {
+    font-size: 12px;
+    line-height: 16px; }
+  iframe {
+    height: 480px; } }

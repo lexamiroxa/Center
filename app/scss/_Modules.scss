@@ -1,1 +1,9 @@
 /*-- Локальные Модули */
+.Breadcrumbs {
+    @include Links_Roboto_Regular_16px_Default;
+    padding-top: 16px;
+}
+
+.Contacts {
+    padding-top: 16px;
+}
