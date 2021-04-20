@@ -1,14 +1,1 @@
 /*-- Глобальные модули */
-/*---- Хедер */
-.Header {
-    hr {
-        border-bottom-width: 0px;
-        border-top-width: 2px;
-        border-color: $Branded_Colors_Fun_Green;
-        margin-block-start: 0;
-        margin-block-end: 0;
-        border-style: solid;
-    }
-    background-color: #fff;
-    @include FourDp-Elevation;
-}

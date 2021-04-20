@@ -75,50 +75,40 @@
   line-height: 21px;
   text-decoration-line: underline;
 }
-@mixin Links_Roboto_Regular_16px_Hover {
+@mixin Links_Roboto_Regular_16px_Default {
   font-size: 16px;
   line-height: 19px;
 }
 @mixin Links_Roboto_Regular_16px_Hover {
-  font-size: 16px;
-  line-height: 19px;
   text-decoration-line: underline;
 }
-@mixin Links_Roboto_Regular_14px_Hover {
+@mixin Links_Roboto_Regular_14px_Default {
   font-size: 14px;
   line-height: 16px;
 }
 @mixin Links_Roboto_Regular_14px_Hover {
-  font-size: 14px;
-  line-height: 16px;
   text-decoration-line: underline;
 }
-@mixin Links_Roboto_Regular_12px_Hover {
+@mixin Links_Roboto_Regular_12px_Default {
   font-size: 12px;
   line-height: 16px;
 }
 @mixin Links_Roboto_Regular_12px_Hover {
-  font-size: 12px;
-  line-height: 16px;
   text-decoration-line: underline;
 }
-@mixin Links_Roboto_Regular_10px_Hover {
+@mixin Links_Roboto_Regular_10px_Default {
   font-size: 10px;
   line-height: 12px;
 }
 @mixin Links_Roboto_Regular_10px_Hover {
-  font-size: 10px;
-  line-height: 12px;
+  text-decoration-line: underline;
+}
+@mixin Links_Roboto_Regular_8px_Default {
+  font-size: 8px;
+  line-height: 9px;
+}
+@mixin Links_Roboto_Regular_8px_Hover {
 
-  text-decoration-line: underline;
-}
-@mixin Links_Roboto_Regular_8px_Hover {
-  font-size: 8px;
-  line-height: 9px;
-}
-@mixin Links_Roboto_Regular_8px_Hover {
-  font-size: 8px;
-  line-height: 9px;
   text-decoration-line: underline;
 }
 //Healines
@@ -131,6 +121,7 @@
 }
 @mixin Headlines_Roboto_Stab_Light_35px {
   font-family:  'Roboto Slab', sans-serif;
+  font-weight: 300;
   font-size: 35px;
   line-height: 46px;
 }
