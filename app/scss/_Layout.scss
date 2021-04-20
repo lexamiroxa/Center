@@ -100,8 +100,16 @@
     transition-timing-function: ease-in-out;
 
     &:hover{
+        .NavMoreText{
             color: $Branded_Colors_Fun_Green;
+        }
     }
+}
+
+.NavMoreText {
+    transition-duration: 0.2s;
+    transition-property: color;
+    transition-timing-function: ease-in-out;
 }
 
 .NavMoreActive {
