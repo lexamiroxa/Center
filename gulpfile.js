@@ -41,7 +41,7 @@ function style() {
 }
 
 function exportCss() {
-  return gulp.src('./app/scss/**/index.scss')
+  return gulp.src('./app/css/**/index.css')
     .pipe(sourcemaps.init())
     .pipe(uncss({
       html: ['./app/index.html', './app/**/*.html']
@@ -49,7 +49,7 @@ function exportCss() {
     .pipe(autoprefixer())
     .pipe(csso())
     .pipe(rename({suffix: '.min'}))
-    .pipe(sourcemaps.write('./dist/css'))
+    .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./dist/css'))
 }
 
@@ -61,5 +61,5 @@ function exportImages() {
   .pipe(gulp.dest('./dist/src/'))
 }
 
-exports.images = exportImages
+exports.Excss = exportCss
 exports.start = startwatch, style
