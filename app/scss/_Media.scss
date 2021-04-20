@@ -5,11 +5,26 @@
         height: 380px;
     }
     
+    .Page-Partner-More {
+        width: 95%;
+        position: relative;
+        right: 10px;
+    }
+
+    .Page-Announces-More {
+        width: 95%;
+        position: relative;
+        right: 10px;
+    }
 }
 
 @media screen and (max-width: 580px){
 
-    .contact-container-text {
+    .Headline-Border {
+      @include Headlines_Roboto_Stab_Light_20px;
+    }
+
+    .Center-Name {
       @include Headlines_Roboto_Medium_16px;
     }
 
@@ -27,11 +42,45 @@
         color: #949494;
     }
 
-    .pages-contact-info-text {
+    .Pages-Contact-Info-Text {
         @include Links_Roboto_Regular_12px_Default;
     }
 
     iframe{
         height: 480px;
+    }
+
+    .Page-Partner-Img {
+        width: 90px;
+        height: 50px;
+    }
+
+    .Page-Partner-Text {
+        @include Headlines_Roboto_Medium_14px;
+        bottom: 20px;
+    }
+
+    .Page-Announces-Block_Date {
+        @include Universal_Roboto_Regular_11px;
+
+        position: absolute;
+
+        left: 38px;
+        top: 60px;
+    }
+
+    .Page-Announces-Block_Date-Number {
+        left: 43px;
+        top: 50px;
+    }
+
+    .Page-Announces-Img {
+        width: 90px;
+        height: 50px;
+    }
+
+    .Page-Announces-Text {
+        @include Headlines_Roboto_Medium_14px;
+        bottom: 20px;
     }
 }

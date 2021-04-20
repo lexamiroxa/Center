@@ -3014,25 +3014,34 @@ li {
   font-size: 24px;
   line-height: 33px; }
 
-.pages_contact-info-text {
-  font-size: 16px;
-  line-height: 19px; }
+.Pages-Contact-Info {
+  margin-top: 30px;
+  margin-bottom: 30px; }
 
-.map {
+.Pages-Contact-Info-Img {
+  width: 22px;
+  height: 31px; }
+
+.Pages-Contact-Info-Text {
+  font-size: 16px;
+  line-height: 19px;
+  position: relative;
+  bottom: 10px; }
+
+.Map {
   padding-top: 30px; }
 
 iframe {
   height: 540px; }
 
-.pages-contact-info-br {
-  margin-top: 30px;
-  margin-bottom: 30px; }
+.Partner {
+  margin-top: 20px; }
 
-.page-partner-img {
+.Page-Partner-Img {
   width: 200px;
   height: 130px; }
 
-.page-partner-text {
+.Page-Partner-Text {
   font-weight: 500;
   font-size: 22px;
   line-height: 30px;
@@ -3040,13 +3049,13 @@ iframe {
   left: 50px;
   bottom: 50px; }
 
-.page-partner-block {
+.Page-Partner-Block {
   justify-content: center;
   align-items: flex-start;
   padding: 32px 0px 0px;
   border-bottom: 2px solid #949494; }
 
-.page-partner-more {
+.Page-Partner-More {
   width: 231px;
   height: 58px;
   border: 2px solid #155724;
@@ -3059,12 +3068,69 @@ iframe {
   flex-flow: column;
   align-items: center; }
 
-.page-partner-more-text {
+.Page-Partner-More-Text {
   position: relative;
   top: 15px;
   color: #155724; }
 
-.page-partner-more-button {
+.Page-Partner-More-Button {
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+.Announces {
+  margin-top: 20px; }
+
+.Page-Announces-Block {
+  justify-content: center;
+  align-items: flex-start;
+  padding: 32px 0px 0px;
+  border-bottom: 2px solid #949494;
+  position: relative; }
+
+.Page-Announces-Img {
+  width: 200px;
+  height: 130px; }
+
+.Page-Announces-Block_Date {
+  font-size: 22px;
+  line-height: 26px;
+  position: absolute;
+  left: 80px;
+  bottom: 35px;
+  color: #2E7F3C; }
+
+.Page-Announces-Block_Date-Number {
+  left: 90px;
+  bottom: 65px; }
+
+.Page-Announces-Text {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 30px;
+  position: relative;
+  left: 50px;
+  bottom: 50px; }
+
+.Page-Announces-More {
+  width: 231px;
+  height: 58px;
+  border: 2px solid #155724;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-size: 22px;
+  line-height: 26px;
+  margin-top: 50px;
+  display: flex;
+  flex-flow: column;
+  align-items: center; }
+
+.Page-Announces-More-Text {
+  position: relative;
+  top: 15px;
+  color: #155724; }
+
+.Page-Announces-More-Button {
   justify-content: center;
   align-items: center;
   text-align: center; }
@@ -3083,10 +3149,23 @@ iframe {
 /*---- Контакты */
 @media screen and (max-width: 770px) {
   iframe {
-    height: 380px; } }
+    height: 380px; }
+  .Page-Partner-More {
+    width: 95%;
+    position: relative;
+    right: 10px; }
+  .Page-Announces-More {
+    width: 95%;
+    position: relative;
+    right: 10px; } }
 
 @media screen and (max-width: 580px) {
-  .contact-container-text {
+  .Headline-Border {
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px; }
+  .Center-Name {
     font-weight: 500;
     font-size: 16px;
     line-height: 20px; }
@@ -3101,8 +3180,33 @@ iframe {
     font-size: 12px;
     line-height: 16px;
     color: #949494; }
-  .pages-contact-info-text {
+  .Pages-Contact-Info-Text {
     font-size: 12px;
     line-height: 16px; }
   iframe {
-    height: 480px; } }
+    height: 480px; }
+  .Page-Partner-Img {
+    width: 90px;
+    height: 50px; }
+  .Page-Partner-Text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    bottom: 20px; }
+  .Page-Announces-Block_Date {
+    font-size: 11px;
+    line-height: 14px;
+    position: absolute;
+    left: 38px;
+    top: 60px; }
+  .Page-Announces-Block_Date-Number {
+    left: 43px;
+    top: 50px; }
+  .Page-Announces-Img {
+    width: 90px;
+    height: 50px; }
+  .Page-Announces-Text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    bottom: 20px; } }
