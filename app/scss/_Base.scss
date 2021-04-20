@@ -1,0 +1,28 @@
+/*-- Базовые элементы */
+body {
+    overflow-x: hidden;
+}
+
+h1 {
+    @include Headlines_Roboto_Stab_Light_42px;
+}
+
+h2 {
+    @include Headlines_Roboto_Stab_Light_35px;
+}
+
+h3 {
+    @include Headlines_Roboto_Stab_Light_29px;
+}
+
+h4 {
+    @include Headlines_Roboto_Stab_Light_20px;
+}
+
+li {
+    padding-top: 16px;
+    &:first-child{
+        padding-top: 0px;
+    }
+}
+
